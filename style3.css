@@ -1,0 +1,126 @@
+.sign-up-page {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px;
+    background-color: #f5f5f5;
+    border-radius: 24px;
+    padding: 40px;
+  }
+  
+  .left-section {
+    flex: 1;
+    background-color: #b9d6ff;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .illustration {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .logo {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 40px;
+  }
+  
+  .input-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    background-color: #b9d6ff;
+    border-radius: 20px;
+    padding: 18px 20px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #0549a7;
+    outline: none;
+  }
+  
+  .sign-up-btn {
+    background-color: #0049a7;
+    color: #fff;
+    border: none;
+    border-radius: 56px;
+    padding: 20px 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+   
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      flex-direction: column;
+      max-width: 600px;
+    }
+  
+    .left-section {
+      width: 100%;
+    }
+  
+    .illustration {
+      max-width: 300px;
+    }
+  
+    .right-section {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .left-section {
+      padding: 20px;
+    }
+  
+    .input-container {
+      padding: 0 10px;
+    }
+  
+    .input-field {
+      padding: 15px;
+    }
+  
+    .sign-up-btn {
+      padding: 15px 40px;
+      width: 100%;
+      max-width: 300px;
+    }
+  }

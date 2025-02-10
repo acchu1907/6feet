@@ -1,0 +1,333 @@
+.diabetes-container {
+    display:flex;
+    flex-direction: column;
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    min-height: 50vh;
+    
+  }
+  
+  .hero-section {
+    background-color: #f2c94c;
+    display: flex;
+    width: 100%;
+    margin-left: 50px;
+    padding: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  
+  .hero-title {
+    color: #ffffff;
+    font-size: 120px;
+    font-weight: 700;
+    line-height:0.5;
+  }
+  
+  .hero-description {
+    color: #413f36;
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 600px;
+  }
+  
+  .types-section {
+    background-color: #f5f5f5;
+    display: flex;
+    width: 100%;
+    padding: 67px 80px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .types-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1500px;
+
+  }
+  
+  .type-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    border-radius: 30px;
+    padding: 39px 31px;
+    height: 400px;
+  }
+  
+  .type-1 {
+    background-color: #f6a57c;
+  }
+  
+  .type-2 {
+    background-color: #fb8a9c;
+  }
+  
+  .type-3 {
+    background-color: #bcb4f6;
+  }
+  
+  .type-title {
+    color: #f5f5f5;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .type-1 .type-description {
+    color: #a64312;
+  }
+  
+  .type-2 .type-description {
+    color: #740f0f;
+  }
+  
+  .type-3 .type-description {
+    color: #3322b4;
+  }
+  
+  .type-description {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 991px) {
+    .hero-section {
+      padding: 60px 40px;
+    }
+  
+    .hero-title {
+      font-size: 100px;
+    }
+  
+    .types-section {
+      padding: 40px;
+    }
+  
+    .type-card {
+      min-width: 280px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .hero-section {
+      padding: 40px 20px;
+
+    }
+  
+    .hero-title {
+      font-size: 60px;
+    }
+  
+    .hero-description {
+      font-size: 18px;
+    }
+  
+    .types-section {
+      padding: 20px;
+    }
+  
+    .types-grid {
+      gap: 20px;
+    }
+  
+    .type-card {
+      min-width: 100%;
+    }
+  
+    .type-title {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+.diabetes-container {
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  width: 100%;
+  max-width: 1464px;
+  margin: 0 auto;
+}
+
+.info-section {
+  border-radius: 24px;
+  background-color:  #f2c94c;
+  display: flex;
+  width: 100%;
+  padding: 155px 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 80%;
+  max-width: 100%;
+  flex-direction: column;
+  gap: 32px;
+
+}
+
+.title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 102px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-left: -20px;
+
+}
+
+.description {
+  color: rgba(65, 63, 54, 1);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 460px;
+  margin-left: -400px;
+  
+}
+
+@media (max-width: 991px) {
+  .info-section {
+    padding: 100px 40px;
+  }
+
+  .title {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 640px) {
+  .info-section {
+    padding: 60px 20px;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}
+
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    font-family:
+      Poppins,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .booking-section {
+    border-radius: 24px;
+    background-color: rgba(245, 245, 245, 1);
+    display: flex;
+    width: 100%;
+    padding: 233px 80px 120px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    margin-bottom: -24px;
+    width: 853px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .booking-title {
+    color:  #f2c94c;
+    font-size: 105px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 137px;
+  }
+  
+  .booking-button {
+    border-radius: 67px;
+    background-color:  #f2c94c;
+    width: 100%;
+    max-width: 853px;
+    padding: 47px 70px;
+    font-size: 31px;
+    color: rgba(245, 245, 245, 1);
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .booking-button:hover {
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 991px) {
+    .booking-section {
+      padding: 180px 40px 100px;
+    }
+  
+    .content-wrapper {
+      width: 100%;
+    }
+  
+    .booking-title {
+      font-size: 80px;
+      margin-bottom: 100px;
+    }
+  
+    .booking-button {
+      padding: 40px 50px;
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .booking-section {
+      padding: 120px 20px 80px;
+    }
+  
+    .booking-title {
+      font-size: 50px;
+      margin-bottom: 60px;
+    }
+  
+    .booking-button {
+      padding: 30px 20px;
+      font-size: 24px;
+      border-radius: 40px;
+    }
+  }
