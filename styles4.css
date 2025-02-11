@@ -9,7 +9,7 @@
   
   .header {
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@
   }
   
   .logo {
-    width: 90px;
+    width: 50px;
     height: auto;
   }
   

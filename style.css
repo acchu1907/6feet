@@ -1,6 +1,6 @@
 .home-page {
     background-color: #ffffff;
-    display: flex;
+    display: flexbox;
     padding: 73px 0 73px 80px;
     flex-direction: column;
     overflow: hidden;
@@ -25,7 +25,7 @@
     aspect-ratio: 1.04;
     object-fit: contain;
     object-position: center;
-    width: 105px;
+    width: 60px;
     align-self: stretch;
     flex-shrink: 0;
   }
@@ -55,7 +55,7 @@
     border-radius: 56px;
     background-color: #0049a7;
     border: none;
-    padding: 21px 63px;
+    padding: 21px 30px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
@@ -76,9 +76,10 @@
     align-items: center;
     justify-content: space-around;
     padding: 50px;
+    width: 1268px;
     background: #dce5fe;
     border-radius: 20px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .hero-text {
@@ -151,7 +152,7 @@
 .general { background: #f2c94c; }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .hero {
         flex-direction: column;
         text-align: center;
@@ -172,8 +173,8 @@
     background-color: #b9d6ff;
     margin-top: 38px;
     width: 1464px;
-    max-width: 100%;
-    padding: 17px 0 0 80px;
+    max-width: 90%;
+    padding: 50px;
   }
   
   .content-wrapper {
@@ -223,9 +224,9 @@
     border-radius: 24px;
     background-color: #f5f5f5;
     margin-top: 42px;
-    width: 100%;
+    width: 90%;
     max-width: 1464px;
-    padding: 125px 70px 97px;
+    padding: 50px;
   }
   
   .contact-info {
@@ -238,7 +239,7 @@
   
   @media (max-width: 991px) {
     .home-page {
-      padding-left: 20px;
+      padding-left: 5px;
     }
   
     .header {
@@ -259,11 +260,11 @@
     }
   
     .background-shape {
-      max-width: 100%;
+      max-width: 90%;
     }
   
     .about-section {
-      padding-left: 20px;
+      padding-left: 5px;
     }
   
     .content-wrapper {
@@ -274,12 +275,12 @@
   
     .about-content {
       width: 100%;
-      margin-top: 40px;
+      margin-top: 5px;
     }
   
     .about-title {
       max-width: 100%;
-      font-size: 40px;
+      font-size: 30px;
     }
   
     .about-description {
@@ -297,7 +298,7 @@
     }
   
     .contact-section {
-      max-width: 100%;
+      max-width: 90%;
       padding: 100px 20px 110px;
       margin-top: 40px;
     }

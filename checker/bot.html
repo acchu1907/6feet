@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Symptom Checker</title>
+    <link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Diabetes Symptom Checker</h2>
+        <textarea id="symptomInput" placeholder="Describe your symptoms..."></textarea>
+        <button onclick="checkSymptoms()">Check</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function checkSymptoms() {
+            let symptoms = document.getElementById("symptomInput").value;
+            if (!symptoms.trim()) {
+                alert("Please enter symptoms");
+                return;
+            }
+
+            fetch("/check_symptoms", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ symptoms: symptoms })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("result").innerHTML = `<div class="response-box">${data.reply.replace(/\n/g, "<br>")}</div>`;
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Symptom Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EBDD98;
+            text-align: center;
+            margin: 0;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 0;
+        }
+
+        .container {
+            background:#f2c94c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 35%;
+            height: 500px;
+            margin: 50px auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        textarea {
+            width: 80%;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        button {
+            background-color: #BCB4F6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #9A8EE0;
+        }
+
+        #result {
+            background: rgb(235, 235, 235);
+            color: #333;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+            white-space: pre-wrap;
+            margin-left: 35px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Diabetes Symptom Checker</h2>
+        <textarea id="symptomInput" placeholder="Describe your symptoms..." ></textarea>
+        <button onclick="checkSymptoms()">Check</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function checkSymptoms() {
+            let symptoms = document.getElementById("symptomInput").value;
+            fetch("/check_symptoms", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ symptoms: symptoms })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("result").innerHTML = `<pre>${data.reply}</pre>`;
+            });
+        }
+    </script>
+</body>
+</html>
