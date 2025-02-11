@@ -25,8 +25,7 @@ The **Mini Hospital Website** is a digital healthcare platform designed to provi
 ## 📜 Installation & Setup
 ### 📥 Clone the Repository
 ```bash
-git clone https://github.com/your-username/mini-hospital-website.git
-cd mini-hospital-website
+git clone https://github.com/acchu1907/6feet
 ```
 
 ### 🛠 Backend Setup
