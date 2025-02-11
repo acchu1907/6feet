@@ -1,6 +1,40 @@
 <div class="home-page">
     <header class="header">
         <link rel="stylesheet" href="style.css">
+        <script>
+          (function() {
+              if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+                  window.chatbase = (...arguments) => {
+                      if (!window.chatbase.q) {
+                          window.chatbase.q = []
+                      }
+                      window.chatbase.q.push(arguments)
+                  };
+                  window.chatbase = new Proxy(window.chatbase, {
+                      get(target, prop) {
+                          if (prop === "q") {
+                              return target.q
+                          }
+                          return (...args) => target(prop, ...args)
+                      }
+                  })
+              }
+              const onLoad = function() {
+                  const script = document.createElement("script");
+                  script.src = "https://www.chatbase.co/embed.min.js";
+                  script.id = "xFvSryj8vvFYYEkqHt3hY";
+                  script.domain = "www.chatbase.co";
+                  document.body.appendChild(script)
+              };
+              if (document.readyState === "complete") {
+                  onLoad()
+              } else {
+                  window.addEventListener("load", onLoad)
+              }
+          })();
+      </script>
+
+
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/9b7dbe278b99490cbea504d35776152a/86a345bb7679f4eae18434c10d4d0480725a76a218cabf7518f42b069f8527fa?placeholderIfAbsent=true"
@@ -9,9 +43,9 @@
       />
       <nav class="navigation">
         <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Articles</a>
-        <a href="#" class="nav-link">Pharmacy</a>
-        <a href="#" class="nav-link">Chatbot</a>
+        <a href="#" class="nav-link">About Us</a>
+        <a href="booking.html" class="nav-link">Appointment</a>
+        <a href="#" class="nav-link">Contact Us</a>
       </nav>
       <a href="loginpage.html">
       <button class="login-button">Log In</button>
@@ -54,8 +88,8 @@
       </a>
   </section>
 
-  
-    <div class="background-shape"></div>
+<!--   
+    <div class="background-shape"></div> -->
   
     <section class="about-section">
       <div class="content-wrapper">
@@ -89,10 +123,6 @@
         📞 Phone: 6381 ****
          📧 Email: 6ftcare2025@gmail.com
           🌐 Website:www.6ftcare.com
-        <br />
-        <br />
-        <br />
-        <br />
         <br />
         <br />
         <br />
